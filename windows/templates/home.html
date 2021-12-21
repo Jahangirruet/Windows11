@@ -1,0 +1,20 @@
+{% load static %}
+{% static "images" as baseUrl%}
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        {% for menu in menus %}
+        <p>
+            <img src="{{baseUrl}}/{{menu.img}}">
+            <p>
+            FooD NAME : {{menu.name}}
+            Price     : {{menu.price}} $ 
+            </p>             
+        </p>
+        {% endfor  %}
+
+    </body>
+</html>
